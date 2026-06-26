@@ -596,6 +596,33 @@
   }
 
   :focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+
+
+/* ===== Extra Responsive Fixes ===== */
+@media (max-width:768px){
+.wrap{padding:0 16px;}
+.nav-inner{padding:12px 16px;}
+.hero{padding:60px 0 40px;}
+.hero h1{font-size:1.8rem;}
+.hero p.tagline{font-size:.95rem;}
+.hero-grid,.about-grid,.contact-grid,.footer-grid,.faculty-grid,.academic-grid,.notice-board{grid-template-columns:1fr!important;}
+.stats-grid{grid-template-columns:repeat(2,1fr)!important;}
+.gallery-grid{grid-template-columns:1fr 1fr!important;grid-auto-rows:140px;}
+.gallery-grid .g-item:nth-child(1),
+.gallery-grid .g-item:nth-child(6){grid-column:span 2;}
+.btn-row{flex-direction:column;}
+.btn,.btn-navy{width:100%;justify-content:center;}
+}
+@media (max-width:480px){
+.hero h1{font-size:1.5rem;}
+.section-head h2{font-size:1.4rem;}
+.brand-text .name{font-size:.9rem;}
+.stats-grid{grid-template-columns:1fr!important;}
+.gallery-grid{grid-template-columns:1fr!important;}
+.gallery-grid .g-item:nth-child(1),
+.gallery-grid .g-item:nth-child(6){grid-column:span 1;}
+}
+
 </style>
 </head>
 <body>
@@ -1002,4 +1029,3 @@
 
 </body>
 </html>
-
